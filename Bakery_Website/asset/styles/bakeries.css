@@ -1,0 +1,87 @@
+.hide{
+	display: none;
+	visibility: hidden;
+}
+
+body{
+    background-image: url("../images/Bakery.jpg");
+    background-size: 100%;
+}
+
+header {
+    margin-top: 30px;
+    position: relative;
+    text-align: center;
+}
+
+main{
+    background-color:#555555;
+    background-size: 60%;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+h1{
+    font-weight: bold;
+    font-size: 50px;
+    text-transform: uppercase;
+    color:rosybrown;
+    text-shadow: 5px 5px #555555;
+}
+
+h2{
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color:chocolate;
+}
+h3{
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: beige;
+}
+
+table, tr, td {
+  border: 5px solid;
+}
+
+label{
+    font-size: 15px;
+    color:antiquewhite;
+}
+.submit{
+    text-align: center;
+}
+footer{
+    padding-top: 10px;
+    font-weight: bold;
+    color:beige;
+    font-size: 10px;
+    text-align: center;
+}
+.float_right{
+    float: right;
+}
+.float_left{
+    float: left;
+}
+
+.border1{
+    margin-left: auto;
+    margin-right: auto;
+}
+.border2{
+    margin-left: auto;
+    margin-right: auto;
+}
+.border3{
+    margin-left: auto;
+    margin-right: auto;
+}
+p{
+    font-size: 14px;
+    color: aliceblue;
+}

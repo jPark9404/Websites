@@ -1,0 +1,135 @@
+
+  
+    <h2>Select Type of Cake:</h2>
+    <select name="cakeType_select" id="cakeType_select" onchange="chooseCakes();">
+        <option value="">-- Select Cakes --</option>
+        <option value="Sheet Cake">Rectangular Cake</option>
+        <option value="Round Cake">Round Cake</option>
+    </select>
+    <br>
+    <br>
+    <div id="SheetType" class="hide">
+        <table class="border2">
+            <tr>
+                <td>
+                    <h3>Rectangular Cake</h3>
+                    <div>
+                        <p>* Minimum size 30cm(L) and 30cm(W) *</p>
+                        <p>* Base Price: $18 (Minimum size) *</p>
+                        <p>----------------------------------------------------------------</p>
+                        <div>
+                            <p>* Maximum size 60cm(Lengh) x 45 (Width) *</p>
+                            <p>* $0.02 extra (per square cm) above 30cm(L/W) *</p>
+                            <label>Length</label>
+                            <input type="number" name="sheet_Length" id="sheet_Length" min="30" max="60">
+                            <br>
+                            <label>Width</label>
+                            <input type="number" name="sheet_Width" id="sheet_Width" min="30" max="45">
+                        </div>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div>
+                        <p>* Please Select the Layer *</p>
+                        <p>* %50 extra charge of the each layer From 2nd Layer *</p>
+                        <div>
+                            <label>Cake Layer (Max: 3)</label>
+                            <input type="number" name="scake_layer" id="scake_layer" min="1" max="3">
+                        </div>
+                    </div>
+                </td>
+            </tr>
+        </table>
+        <div>
+            <table class="border2">
+                <tr>
+                    <td>
+                        <h3>Additional Choices</h3>
+                        <section class="choice">
+                            <div>
+                                <div class="float_left">
+                                    <input type="checkbox" name="c_choice[]" value="0">
+                                    <label>Cream Cheese icing: $5</label><br>
+                                </div>
+                                <br>
+                                <div class="float_left">
+                                    <input type="checkbox" name="c_choice[]" value="1">
+                                    <label>Fruit and Almonds topping: $7</label><br>
+                                </div>
+                                <br>
+                                <div class="float_left">
+                                    <input type="checkbox" name="c_choice[]" value="2">
+                                    <label>Fruit jam filling between layers: $4</label><br>
+                                </div>
+                            </div>
+                        </section>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <br>
+        <button onclick="SheetOrder();">Submittion Order</button>
+    </div>
+    <div id="RoundType" class="hide">
+        <table class="border2">
+            <tr>
+                <td>
+                    <h3>Round cakes</h3>
+                    <div class="cake_RoundType">
+                        <p>* Minimum size 15cm(R) / Maximum size 30cm(R)*</p>
+                        <p>* The Base Price: $15 (Minimum size)*</p>
+                        <p>-----------------------------------------------</p>
+                        <p>* $0.02 extra (per square cm) above 15cm *</p>
+                        <label>Size(R): </label>
+                        <input type="number" name="round_size" id="round_size" min="15" max="30">
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div>
+                        <p>* Additional Each Layer: %50 extra of the cake *</p>
+                        <div>
+                            <label>Cake Layer (Max: 3): </label>
+                            <input type="number" name="rcake_layer" id="rcake_layer" min="1" max="3">
+                        </div>
+                    </div>
+                </td>
+            </tr>
+        </table>
+        <div>
+            <table class="border2">
+                <tr>
+                    <td>
+                        <h3>Additional Choices</h3>
+                        <section class="choice2">
+                            <div>
+                                <div class="float_left">
+                                    <input type="checkbox" name="c_choice[]2" value="0">
+                                    <label>Cream Cheese icing: $5</label><br>
+                                </div>
+                                <br>
+                                <div class="float_left">
+                                    <input type="checkbox" name="c_choice[]2" value="1">
+                                    <label>Fruit and Almonds topping: $7</label><br>
+                                </div>
+                                <br>
+                                <div class="float_left">
+                                    <input type="checkbox" name="c_choice[]2" value="2">
+                                    <label>Fruit jam filling between layers: $4</label><br>
+                                </div>
+                            </div>
+                        </section>
+                    </td>
+                </tr>
+            </table>
+            <button onclick="RoundOrder();">Submittion Order</button>
+        </div>
+        <br>
+    </div>
+    <br>
+    </div>
+    <div id="display"></div>
+

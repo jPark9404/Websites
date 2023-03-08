@@ -1,0 +1,52 @@
+h1{
+ color: white;
+ font-size: 40px;
+}
+h2{
+	color: white;
+}
+header {
+	padding-left: 20px;
+	position: relative;
+}
+header .logo {
+	display: inline-block;
+	position: relative;
+	vertical-align: middle;
+	margin: 10px;
+}
+header .logo img {
+	display: block;
+	height: 60px;
+}
+img{
+	width: 100px;
+	height: 80px;
+}
+body{
+    background-size: 100%;
+	background-image: url("../images/RentCar.jpg");
+	padding-left: 40px;
+}
+
+.hide{
+	display: none;
+	visibility: hidden;
+}
+.hide2{
+	display: none;
+	visibility: hidden;
+}
+
+table, tr, td {
+	border: 2px solid;
+	color: aliceblue;
+}
+
+p{
+	color: azure;
+}
+
+label{
+	color: azure;
+}

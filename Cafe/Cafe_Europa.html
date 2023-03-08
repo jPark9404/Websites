@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Cafe_Europa Order Form</title>
+	<link rel="stylesheet" type="text/css" href="./asset/styles/Cafe_Europa.css">
+</head>
+
+<body>
+	<header>
+		<h1>Cafe_Europa Order Form</h1>
+	</header>
+	<main>
+
+		<div id="cafe_order_form">
+			<section>
+				<h2>Customer Info</h2>
+				<div>
+					<label>Full Name:</label>
+					<input type="text" name="c_fullname" id="c_fullname">
+				</div>
+				<div>
+					<label>Phone:</label>
+					<input type="tel" name="c_phone" id="c_phone">
+				</div>
+				<div>
+					<label>Pick Date:</label>
+					<input type="datetime-local" name="c_pickupDate" id="c_pickupDate">
+				</div>
+				<div id="customer_info_error"></div>
+			</section>
+			<section class="pizza">
+				<h2>Neapolitan Style Pizza</h2>
+				<input type="checkbox" name="c_pizza[]" value="0">
+				<label>Margherita: $12.00</label>
+				<input type="number" name="quantity" id="quantity1" min="0" max="99" size="2">
+				<br>
+				<input type="checkbox" name="c_pizza[]" value="1">
+				<label>Quattro Formaggi: $12.50</label>
+				<input type="number" name="quantity" id="quantity2" min="0" max="99" size="2">
+				<br>
+				<input type="checkbox" name="c_pizza[]" value="2">
+				<label>Capricciosa: $13.00</label>
+				<input type="number" name="quantity" id="quantity3" min="0" max="99" size="2">
+			</section>
+
+			<section class="sandwich">
+				<h2>Sandwich Choices</h2>
+				<input type="checkbox" name="c_sandwich[]" value="0">
+				<label>Schinitzel: $8.50</label>
+				<input type="number" name="quantity" id="quantity4" min="0" max="99" size="2">
+				<br>
+				<input type="checkbox" name="c_sandwich[]" value="1">
+				<label>Mixed Grill: $9.50</label>
+				<input type="number" name="quantity" id="quantity5" min="0" max="99" size="2">
+				<br>
+				<input type="checkbox" name="c_sandwich[]" value="2">
+				<label>Big Beef on a Bun: $10.00</label>
+				<input type="number" name="quantity" id="quantity6" min="0" max="99" size="2">
+				<br>
+
+			</section>
+			<section class="beverage">
+				<h2>Beverages</h2>
+				<input type="checkbox" name="c_beverage[]" value="0">
+				<label>Coffee: $2.00</label>
+				<input type="number" name="quantity" id="quantity7" min="0" max="99" size="2">
+				<br>
+				<input type="checkbox" name="c_beverage[]" value="1">
+				<label>Latte: $2.50</label>
+				<input type="number" name="quantity" id="quantity8" min="0" max="99" size="2">
+				<br>
+				<input type="checkbox" name="c_beverage[]" value="2">
+				<label>Soft drink: $1.75</label>
+				<input type="number" name="quantity" id="quantity9" min="0" max="99" size="2">
+			</section>
+			<section>
+				<button onclick="orderCafe();">Submit Order</button>
+			</section>
+		</div>
+
+		<div id="display"></div>
+
+	</main>
+	<footer>
+
+	</footer>
+
+	<!-- Custom JavaScript -->
+	<script type="text/javascript" src="./asset/scripts/Cafe_Europa.js"></script>
+</body>
+
+</html>

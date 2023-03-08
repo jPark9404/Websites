@@ -1,0 +1,26 @@
+@media all{
+header{
+    font-size: 40px;
+    font-weight: bold;
+}
+body{
+    background-color:blanchedalmond;
+}
+h1{
+    font-size: 30px;
+    font-weight: bold;
+}
+h2{
+    font-size: 20px;
+}
+label{
+    font-size: 16px;
+
+}
+.pickUP{
+    width: 50px;
+}
+.message{
+    font-size: 9pt;
+}
+}

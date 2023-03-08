@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>rentalcar</title>
+    <link rel="stylesheet" href="./assets/styles/rentalcar.css">
+</head>
+
+<body onload="loadJSON()">
+    <header>
+        <div class="logo">
+            <img src="./assets/images/Logo.jpg" alt="">
+        </div>
+        <h1>Dodgy Brakes Car Rental</h1>
+    </header>
+    <main>
+        <section>
+            <p>* Please type full last Name *</p>
+            <label>Search Client Name:</label>
+            <input type="text" id="search_name" onkeyup="findclientByName()">
+            <br>
+        </section>
+        <div class="clientChice">
+            <br>
+            <table id="search_results" class="hide2">
+
+            </table>
+        </div>
+        <br>
+        <div>
+        </div>
+        <br>
+        <div id="vehicleChoice" class="hide">
+            <table class="border2">
+                <tr>
+                    <td>
+                        <h3>Vehicle Choice</h3>
+                        <section class="choice">
+                            <div>
+                                <div class="float_left">
+                                    <img src="./assets/images/Compact.jpg" alt="">
+                                    <input type="radio" name="c_choice[]" id="CompactType">
+                                    <label>Compact $15/day</label><br>
+                                </div>
+                                <br>
+                                <div class="float_left">
+                                    <img src="./assets/images/MidSize.jpg" alt="">
+                                    <input type="radio" name="c_choice[]" id="MidType">
+                                    <label>Mid-size $20/day</label><br>
+                                </div>
+                                <br>
+                                <div class="float_left">
+                                    <img src="./assets/images/Luxury.jpg" alt="">
+                                    <input type="radio" name="c_choice[]" id="LuxuryType">
+                                    <label>Luxury $35/day</label><br>
+                                </div>
+                                <br>
+                                <div class="float_left">
+                                    <img src="./assets/images/Van_Truck.jpg" alt="">
+                                    <input type="radio" name="c_choice[]" id="VTType">
+                                    <label>Van/Truck $40/day</label><br>
+                                </div>
+                                <br>
+                                <div>
+                                    <label>Days of car (Max: 30d ays)</label>
+                                    <input type="number" name="days" id="days" min="1" max="30">
+                                </div>
+                            </div>
+                        </section>
+                    </td>
+                </tr>
+            </table>
+            <table class="border2">
+                <tr>
+                    <td>
+                        <h3>Extra Options</h3>
+                        <section class="choiceExtra">
+                            <div>
+                                <div class="float_left">
+                                    <input type="checkbox" name="c_choice[]" value="0">
+                                    <label>Roof Rack or Bicycle Rack extra $5/day</label><br>
+                                </div>
+                                <br>
+                                <div class="float_left">
+                                    <input type="checkbox" name="c_choice[]" value="1">
+                                    <label>GPS extra $10</label><br>
+                                </div>
+                                <br>
+                                <div class="float_left">
+                                    <input type="checkbox" name="c_choice[]" value="2">
+                                    <label>Child Seat Free</label><br>
+                                </div>
+                            </div>
+                        </section>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <button onclick="displayResult();" id="showResult" class="hide">Submit</button>
+        <section id="content"></section>
+
+        <section id="display"></section>
+        <br>
+
+        <section id="display2"></section>
+
+    </main>
+    <script src="./assets/scripts/rentalcar.js"></script>
+
+    <footer>
+        <p>Copyright 2022</p>
+        <ul>
+            <li>
+                <a href="https://unsplash.com/photos/wftNpcjCHT4">
+                    Raban Haaijk. Yellow volkswagen beetle</a>
+            </li>
+            <li>
+                <a href="https://unsplash.com/photos/ViO5m-WkZzI">
+                    Milad Fakurian. 3D Renders</a>
+            </li>
+            <li>
+                <a href="https://unsplash.com/photos/vF5hgBGyVQ4">
+                    Michail Dementiev. Kia small Car</a>
+            </li>
+            <li>
+                <a href="https://unsplash.com/photos/YPfnvLc3bbQ">
+                    Kevin Bonilla. Toyota Camry</a>
+            </li>
+            <li>
+                <a href="https://unsplash.com/photos/YApiWyp0lqo">
+                    Joey Banks. Black sports car front</a>
+            </li>
+            <li>
+                <a href="https://unsplash.com/photos/OnHZTmU7WKQ">
+                    Stephen Leonardi.</a>
+            </li>
+        </ul>
+       <p> All right reserved </p>
+    </footer>
+</body>
+
+</html>

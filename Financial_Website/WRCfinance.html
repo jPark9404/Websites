@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Wild Rose Country Finance</title>
+    <link rel="stylesheet" href="./asset/styles/WRCfinance.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            <img src="./asset/images/logo.jpg">
+        </div>
+        <h1>Wild Rose Country Finance</h1>
+    </header>
+    <main>
+        <div>
+            <h2>Clients Form</h2>
+            <div>
+                <table border="5" class="border1">
+                    <tr>
+                        <td>
+                            <section>
+                                <label>Current Date:</label>
+                                <input type="datetime-local" name="dateTime" id="dateTime">
+                            </section>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <section>
+                                <label>First name:</label>
+                                <input type="text" name="c_fname" id="c_fname" class="float_right">
+                                <br>
+                                <label>Last name:</label>
+                                <input type="text" name="c_lname" id="c_lname" class="float_right">
+                            </section>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <section>
+                                <label>Street Address:</label>
+                                <input type="address" name="c_address" id="c_address" class="float_right">
+                            </section>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <section>
+                                <label>Postal Code:</label>
+                                <input type="text" name="c_postalCode" id="c_postalCode" class="float_right">
+                            </section>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <section class="phone_type" id="c_phone">
+                                <label>Phone Number</label>
+                                <input type="radio" name="c_phone" id="business_phone" value="0">
+                                <label>Business</label>
+                                <input type="radio" name="c_phone" id="personal_phone" value="1">
+                                <label>Personal</label>
+                                <br>
+                                <div>
+                                    <input type="tel" name="c_number" id="c_number" class="float_right">
+                                </div>
+                            </section>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <section>
+                                <label>Email:</label>
+                                <input type="email" name="c_email" id="c_email" class="float_right">
+                            </section>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div>
+                <h3>More information</h3>
+                <table border="5" class="border2">
+                    <section class="custoemr_info">
+                        <tr>
+                            <td>
+                                <div class="status_type">
+                                    <label>Are they current clients</label><br>
+                                    <div>
+                                        <input type="radio" name="c_status" id="c_status" value="Y">
+                                        <label>Yes</label>
+                                        <input type="radio" name="c_status" id="c_nostatus" value="N">
+                                        <label>No</label>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="gender_type">
+                                    <label>Gender</label><br>
+                                    <div>
+                                        <input type="radio" name="c_gender" id="c_genderM" value="M">
+                                        <label>Male</label>
+                                        <input type="radio" name="c_gender" id="c_genderF" value="F">
+                                        <label>Female</label>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="ORhome">
+                                    <label>Own or Rent Home</label><br>
+                                    <div>
+                                        <input type="radio" name="c_own" id="c_ownY" value="Y">
+                                        <label>Yes</label>
+                                        <input type="radio" name="c_own" id="c_ownN" value="N">
+                                        <label>No</label>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div>
+                                    <label>Age</label>
+                                    <input type="number" name="c_age" id="c_age" min="18" class="float_right">
+                                    <br>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div>
+                                    <label>Annual Gross Income</label>
+                                    <input type="number" name="c_income" id="c_income" min="0" class="float_right">
+                                    <br>
+                                </div>
+                            </td>
+                        </tr>
+                    </section>
+                </table>
+            </div>
+            <div>
+                <section class="AssetSelection">
+                    <h3>Selection of Asset</h3>
+                    <div>
+                        <input type="checkbox" name="c_Asset" value="Vehicle">
+                        <label>Vehicle</label><br>
+                        <input type="checkbox" name="c_Asset" value="RRSP">
+                        <label>RRSP</label><br>
+                        <input type="checkbox" name="c_Asset" value="TFSA">
+                        <label>TFSA</label><br>
+                        <input type="checkbox" name="c_Asset" value="RRIF">
+                        <label>RRIF</label><br>
+                    </div>
+                </section>
+            </div>
+            <br>
+            <section>
+                <button onclick="add();">Submit</button>
+            </section>
+        </div>
+
+        <div id="directory_display"></div>
+    </main>
+    <script type="text/javascript" src="./asset/scripts/WRCfinance.js"></script>
+    <br><br>
+    <footer>
+        <p>Copyright 2022</p>
+        <ul>
+            <li><a href="https://media.istockphoto.com/photos/rising-arrow-curve-pointing-up-symbol-with-copy-space-progress-growth-picture-id1346479832?s=612x612">
+                    Unsplash-istock-Sorapop. Rising arrow curve logo </a> </li>
+            <br>
+            <li><a href="https://media.istockphoto.com/photos/stock-market-and-finance-concept-yellow-up-arrow-symbol-glowing-amid-picture-id1305170107?s=612x612">
+                    Unsplash-istock-MicroStockHub. Stock Market And Finance Concept Symbol</a></li> <br>
+        </ul>
+        All right reserved
+    </footer>
+</body>
+
+</html>

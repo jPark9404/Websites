@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Converting amount</title>
+    <link rel="stylesheet" href="./assets/styles/measurment.css">
+</head>
+
+<body>
+
+    <div>
+        <button onclick="welcome();">Welcome!</button>
+    </div>
+    <header>
+        <h1>Converting measurments</h1>
+    </header>
+    <main>
+
+        <form>
+            <div>
+
+                <div class="h2-1">
+                    <h2>litres and Gallons</h2>
+                    <table border="5" class="border">
+                        <tr>
+                            <td>
+                                <Label>Gallons: <b id="message1"></b> </Label>
+                                <input type="number" id="Gallons" name="Gallons" onkeyup="GallonsToLitres();"
+                                    onfocus="messageGallons();" onblur="removeGallon();">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label>Litres: <b id="message2"></b></label>
+                                <input type="number" id="Litres" name="Litres" onkeyup="LitresToGallos();"
+                                    onfocus="messageLitres()" onblur="removeLitres();">
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <br>
+
+                <div class="h2-2">
+                    <h2>Feet and Metres</h2>
+                    <table border="5" class="border">
+                        <tr>
+                            <td>
+                                <Label>Feet: <b id="message3"></b> </Label>
+                                <input type="number" id="Feet" name="Feet" onkeyup="FeetToMetres();"
+                                    onfocus="messageFeet();" onblur="removeFeet();">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <Label>Metres: <b id="message4"></b> </Label>
+                                <input type="number" id="Metres" name="Metres" onkeyup="MetresToFeet();"
+                                    onfocus="messageMetres();" onblur="removeMetres();">
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <br>
+
+                <div class="h2-3">
+                    <h2>Square Metres and Feet</h2>
+                    <table border="5" class="border">
+                        <tr>
+                            <td>
+                                <label>SQ Metres: <b id="message5"></b> </label>
+                                <input type="number" id="SquareMetres" name="SquareMetres" onkeyup="SqMetresToFeet();"
+                                    onfocus="sqMetres();" onblur="removeSqMetres();">
+                            </td>
+                        </tr>
+                        <tr>
+                            <br>
+                            <td>
+                                <label>SQ Feet: <b id="message6"></b> </label>
+                                <input type="number" id="SquareFeet" name="SquareFeet" onkeyup="sqFeetToMetres();"
+                                    onfocus="sqFeet();" onblur="removeSqFeet();">
+                            </td>
+                        </tr>
+                </div>
+                </table>
+            </div>
+            <br><br>
+            <input type="reset" value="Reset Form" class="resetButton">
+        </form>
+
+        <div>
+
+        </div>
+
+        
+    </main>
+
+    <footer>
+    </footer>
+
+    <!--JavaScript-->
+    <script type="text/javascript" src="./assets/scripts/measurement.js"></script>
+
+</body>
+
+</html>

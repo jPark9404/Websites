@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>datasets</title>
+    <link rel="stylesheet" href="./assets/styles/datasets.css">
+</head>
+<body onload="loadData();">
+    <header>
+        <h1>Crime Stats</h1>
+    </header>
+    <br>
+    <main class="board1">
+        <section>
+            <label>Search type:</label>
+            <select id="search_parameter">
+                <!--Criteria 1 -->
+                <option value="sector">Area</option>
+                <!--Criteria 2 -->
+                <option value="community_name">Community Name</option>
+                <!--Criteria 3 -->
+                <option value="year">The year of Crime Stats</option>
+                <!--Criteria 4 -->
+                <option value="month">The month of Crime Stats</option>
+            </select>
+
+            <label>Search:</label>
+            <input type="text" id="search" onkeyup="crimeSearch();">
+        </section>
+
+    </main>
+    <br>
+    <table id="search_results" class="hide"></table>
+
+    <script src="./assets/scripts/datasets.js"></script>
+    <br><br>
+
+    <footer>
+        <p>Reference for Json file</p>
+        <a href="https://data.calgary.ca">
+           City of Calgary . Crime Stats </a>. (Accessed on Apr. 16. 2022)
+    </footer>
+
+</body>
+</html>

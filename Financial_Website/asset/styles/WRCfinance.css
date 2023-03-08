@@ -1,0 +1,58 @@
+@media screen{
+    body{
+        margin: 20px;
+        background-image: url("../images/finance2.avif");
+        background-size: 150%;
+    }
+    header {
+        padding-left: 20px;
+        position: relative;
+    }
+    header .logo {
+        display: inline-block;
+        position: relative;
+        vertical-align: middle;
+        margin: 10px;
+    }
+    header .logo img {
+        display: block;
+        height: 60px;
+    }
+
+    main{
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+     }
+
+     h1{
+        font-weight: bold;
+        text-transform: uppercase;
+        color:aliceblue;
+     }
+     h2{
+        font-weight: bold;
+        text-transform: uppercase;
+        color: beige;
+     }
+     h3{
+        font-weight: bold;
+        text-transform: uppercase;
+        color: beige;
+     }
+    label{
+         color:darkgrey;
+     }
+    
+    footer{
+        font-weight: bold;
+        color:beige;
+        font-size: 10px;
+    }
+    p{
+        color:darkgrey;
+    }
+    .float_right{
+        float: right;
+    }
+}

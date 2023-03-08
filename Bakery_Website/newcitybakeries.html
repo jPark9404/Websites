@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New city bakeries</title>
+    <link rel="stylesheet" href="./asset/styles/bakeries.css">
+</head>
+
+<body>
+    <header>
+        <h1>MJ Bakery</h1>
+    </header>
+    <main>
+        <div>
+            <h2>Clients Information</h2>
+            <p>*Please Fill out the form below*</p>
+            <div>
+                <table class="border1">
+                    <tr>
+                        <td>
+                            <div>
+                                <label>First name:</label>
+                                <input type="text" name="c_fname" id="c_fname" class="float_right" autofocus>
+                            </div>
+                            <br>
+                            <div>
+                                <label>Last name:</label>
+                                <input type="text" name="c_lname" id="c_lname" class="float_right">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label>Address:</label>
+                            <input type="text" name="c_address" id="c_address" class="float_right">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label>Postal Code:</label>
+                            <input type="text" name="c_postalCode" id="c_postalCode" class="float_right">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label>Phone Number</label>
+                            <input type="tel" name="c_phone" id="c_phone" class="float_right">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label>Email</label>
+                            <input type="email" name="c_email" id="c_email" class="float_right">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>* To order Cakes *</p>
+                            <p># Please Click "Show Cakes" button #</p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <br>
+            <section>
+               <button onclick="loadContent();">Show Cakes</button>
+            </section>
+    
+            <section id="content"></section>
+            <!------------------------------------------------------------------------>
+    </main>
+    <script type="text/javascript" src="./asset/scripts/bakeries.js"></script>
+    <footer>
+        <p>Copyright 2022</p>
+        <a href="https://unsplash.com/photos/qYreP9QOdrk">Unsplash.Miti. Food & Drink</a>
+        <br>
+        All right reserved
+    </footer>
+</body>
+
+</html>
